@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+  <template id="delivery_slip_with_barcode" inherit_id="stock.report_delivery_document">
+      <xpath expr="//t[@t-call='report.external_layout']" position="attributes">
+        <attribute name="t-call">stock.external_layout_barcode_right</attribute>
+      </xpath>
+  </template>
+
+</odoo>
